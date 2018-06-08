@@ -1,16 +1,19 @@
 class ShoppingCart {
-  constructor(items) {
-    this.items = items
+  constructor(cart) {
+    this.cart = cart
   }
-  getItems(){
-    const cart = [];
-    return cart;
+  getItems() {
+    const carrinho = []
+    return carrinho
+  }
+  addItem(itemName, quantity, price){
+
   }
   clear(){
 
   }
   clone(){
-    return copyShoppingCart = [...ShoppingCart]
+
   }
 }
 
