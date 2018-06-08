@@ -3,7 +3,7 @@ const { pathFind } = require("../pathFind")
 
 describe("Assignment 2 - pathFind", function() {
   it("JS file should exist, named export should be a function", function() {
-    const { pathFind } = require("../pathFind")
+    const { pathFind } = require("./pathFind")
     assert.strictEqual(
       typeof pathFind,
       "function",
