@@ -1,5 +1,6 @@
 const assert = require("assert")
 const ShoppingCart = require("../src/ShoppingCart")
+const pathFind  = require("./pathFind")
 
 describe("Assignment 1 - ShoppingCart", function() {
 
