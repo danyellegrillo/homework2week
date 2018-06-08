@@ -26,7 +26,7 @@ The app should be runnable simply by cloning the repository and running `yarn te
 
 1.  You must create a module named `ShoppingCart`. The test imports it with
     ```js
-    const ShoppingCart = require("./ShoppingCart")
+    const ShoppingCart = require("./ShoppingCart") X
     ```
 1.  The module must export a `class`, so we can run `const cart = new ShoppingCart()`
 1.  Right after constructing a new object, calling `cart.getItems()` should return an empty array.

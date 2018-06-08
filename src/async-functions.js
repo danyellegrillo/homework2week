@@ -2,8 +2,14 @@ function giveItBackLater(value, callback){
   function loadComplete() {
         callback(value)
     }
-    setTimeout(loadComplete, 100)
+    setTimeout(loadComplete, 105)
 }
+function addSomePromises(){
+
+}
+
+function promiseToGiveItBackLater(){
+
 }
 
 

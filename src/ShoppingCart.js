@@ -7,7 +7,7 @@ class ShoppingCart {
     return carrinho
   }
   addItem(itemName, quantity, price){
-
+    
   }
   clear(){
 
