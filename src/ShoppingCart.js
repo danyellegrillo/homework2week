@@ -20,14 +20,15 @@ class ShoppingCart {
 
 
   clear(){
-    this.items  = [];
+    this.items  = []; // it doesn't need to return, only clean the car...
   }
 
 
   clone(){
-    const copyCarrinho = new ShoppingCart()
-    copyCarrinho = [...this.carrinho]
+    const copyItems = new ShoppingCart();
+    copyItems.items = [...this.items]
+    return copyItems;
   }
 }
 
-module.exports = ShoppingCart 
+module.exports = ShoppingCart
