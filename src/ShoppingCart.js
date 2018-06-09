@@ -1,22 +1,24 @@
 class ShoppingCart {
-  constructor(items) {
-    this.items = items
+  constructor(cart) {
+    this.cart = cart
   }
-  getItems(carti){
-    const cart = [];
-    return cart;
+
+
+  getItems(){
+    this.carrinho = []
+    return this.carrinho;
   }
-  // addItem(itemName, quantity, price){
-  //   let carrinho ={
-  //     name,
-  //     quantity,
-  //     pricePerUnit
-  //   };
-  //   carrinho.push(this.getItems)
-  //
-  // }
+
+
+  addItem(itemName, quantity, price){
+  }
+
+
   clear(){
+    return this.carrinho
   }
+
+
   clone(){
   }
 }
