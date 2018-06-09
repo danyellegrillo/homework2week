@@ -28,8 +28,8 @@ The app should be runnable simply by cloning the repository and running `yarn te
     ```js
     const ShoppingCart = require("./ShoppingCart") X
     ```
-1.  The module must export a `class`, so we can run `const cart = new ShoppingCart()`
-1.  Right after constructing a new object, calling `cart.getItems()` should return an empty array.
+1.  The module must export a `class`, so we can run `const cart = new ShoppingCart()` X
+1.  Right after constructing a new object, calling `cart.getItems()` should return an empty array. X
 1.  We should be able to call `cart.addItem(itemName, quantity, price)`, which adds a new item to an internal array. Subsequent calls to `cart.getItems()` should return the added items. Items in the array should be in this format:
     ```js
     {
