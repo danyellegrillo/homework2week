@@ -25,8 +25,8 @@ class ShoppingCart {
 
 
   clone(){
-    const copyItems = new ShoppingCart();
-    copyItems.items = [...this.items]
+    const copyItems = new ShoppingCart();//doing like the intruction, making a _new_ ShoppingCart
+    copyItems.items = JSON.parse(JSON.stringify(this.items));// then accessing the copyItems.items and passagem a method that copy the other object
     return copyItems;
   }
 }
