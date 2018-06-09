@@ -19,7 +19,7 @@ describe("Assignment 1 - ShoppingCart", function() {
     )
     cart.addItem("Trash can", 1, 15.5)
     assert.deepStrictEqual(
-      cart.items,
+      cart.items,     // tem que ser Items PARA FUNCIONAR. ja mudei tudo e so mudando o nome que funcionou...
       [
         {
           name: "Trash can",

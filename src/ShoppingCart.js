@@ -1,32 +1,33 @@
 class ShoppingCart {
-  constructor(cart) {
-    this.cart = cart
+  constructor() {
+    this.items = []
   }
 
 
   getItems(){
-    this.carrinho = []
-    return this.carrinho;
+    return this.items;
   }
 
 
   addItem(itemName, quantity, price){
+    const newArray = { }
+    newArray.name = itemName
+    newArray.quantity = quantity
+    newArray.pricePerUnit = price
+    this.items.push(newArray);
+
   }
 
 
   clear(){
-    return this.carrinho
+    this.items  = [];
   }
 
 
   clone(){
+    const copyCarrinho = new ShoppingCart()
+    copyCarrinho = [...this.carrinho]
   }
 }
 
-
-
-
-
-
-
-module.exports = ShoppingCart
+module.exports = ShoppingCart 
