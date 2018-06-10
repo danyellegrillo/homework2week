@@ -4,11 +4,16 @@ function giveItBackLater(value, callback){
     }
     setTimeout(loadComplete, 105)
 }
-function addSomePromises(){
-
+function addSomePromises(somePromise){
+  const p1 = new Promise( outputPromise('foo'), outputPromise('bar')) => {
+    resolve('foofoo');
+    reject('barbarbar')
+  }
+  return p1;
 }
 
-function promiseToGiveItBackLater(){
+function promiseToGiveItBackLater(value, giveItBackLater){
+  return new Promise(function (resolve, reject)
 
 }
 

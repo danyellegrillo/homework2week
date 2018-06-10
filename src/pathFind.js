@@ -1,9 +1,10 @@
 
 function pathFind(path, object) {
+  if (object.hasOwnProperty(path[0]) === false) return null
   if (object.hasOwnProperty(path[0])){
      return pathFind(path.slice(1), object[path[0]])
   }
-  else return object.path.length
+  else return object[path.length]
 }
 
 module.exports = { pathFind }
